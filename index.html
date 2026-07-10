@@ -27,10 +27,41 @@
         <nav class="white">
             <div class="container">
                 <!-- Brand logo -->
-                <a href="#" class="brand-logo">
+                <a href="#" class="brand-logo hide-on-med-and-down left">
                     <img src="images/icons_and_logos/logo.png" alt="Recipe.com Logo" class="responsive-img">
                 </a>
-                <ul class="right">
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a class="orange-text text-darken-2 bold" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="orange-text text-darken-2 bold" href="#cakes">Cakes</a>
+                    </li>
+                    <li>
+                        <a class="orange-text text-darken-2 bold" href="#soups">Soups</a>
+                    </li>
+                    <li>
+                        <a class="orange-text text-darken-2 bold" href="#chicken">Chicken</a>
+                    </li>
+                    <li>
+                        <a class="orange-text text-darken-2 bold" href="#customers">Customers</a>
+                    </li>
+                </ul>
+                
+
+                <!-- Tablet brand logo -->
+                <a href="#" class="brand-logo hide-on-small-and-down right">
+                    <img src="images/icons_and_logos/logo.png" alt="Recipe.com Logo" class="responsive-img">
+                </a>
+                <!-- Mobile brand logo -->
+                <a href="#" class="brand-logo hide-on-med-and-up">
+                    <img src="images/icons_and_logos/logo.png" alt="Recipe.com Logo" class="responsive-img">
+                </a>
+                <!-- Mobile sidenav -->
+                <a href="#mobile-sidenav" class="sidenav-trigger">
+                    <i class="material-icons black-text">menu</i>
+                </a>
+                <ul class="sidenav" id="mobile-sidenav">
                     <li>
                         <a class="orange-text text-darken-2 bold" href="#home">Home</a>
                     </li>
@@ -682,6 +713,8 @@
         $('.collapsible').collapsible();
 
         $('.parallax').parallax();
+
+        $('.sidenav').sidenav();
     });
 </script>
 </html>
