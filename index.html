@@ -7,6 +7,11 @@
     <meta name="author" content="Stanley">
     <meta name="keywords" content="recipe food-recipe food-website recipe-website my-recipe myrecipe food-recipe-website">
 
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
     <!--CSS Framework -->
     <link rel="stylesheet" href="css/materialize.css">
     <!-- Vanilla CSS -->
@@ -45,7 +50,7 @@
                             <a class="orange-text text-darken-4 bold" href="#chicken">Chicken</a>
                         </li>
                         <li>
-                            <a class="orange-text text-darken-4 bold" href="#customers">Customers</a>
+                            <a class="orange-text text-darken-4 bold" href="#reviews">Reviews</a>
                         </li>
                     </ul>
                     
@@ -122,7 +127,8 @@
                             CAKES
                         </div>
                         <div class="collapsible-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet facilis totam, ea similique ipsam vel officia reiciendis laudantium sit!</p>
+                            <img src="images/sponge_cake.webp" alt="Sweet Cake" class="responsive-img">
+                            <p>Indulge in sweet and irrestible cake recipes perfect for every celebration.</p>
 
                             <a href="#cakes" class="btn orange darken-4 white-text bold">ALL CAKES RECIPES</a>
                         </div>
@@ -135,62 +141,66 @@
                             SOUPS
                         </div>
                         <div class="collapsible-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet facilis totam, ea similique ipsam vel officia reiciendis laudantium sit!</p>
+                            <img src="images/mexican_soup.webp" alt="Delicious Soup" class="responsive-img">
+
+                            <p>Cozy up with our comforting soup recipes that warms the heart and soul.</p>
 
                             <a href="#soups" class="btn orange darken-4 white-text bold">ALL SOUPS RECIPES</a>
                         </div>
                     </li>
                 </ul>
-                <ul class="col s12 m4 l4 collapsible popout over-ride-padding-to-0">
+                <ul class="col s12 m4 l4 collapsible popout over-ride-padding-to-0"  id="reviews"> <!--Reviews id is placed here, so the review section can display properly when navigated to.-->
                     <li>
                         <div class="collapsible-header orange darken-4 white-text bold">
                             <i class="material-icons left">label</i>
                             CHICKEN
                         </div>
                         <div class="collapsible-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eveniet facilis totam, ea similique ipsam vel officia reiciendis laudantium sit!</p>
+                            <img src="images/chicken_8.webp" alt="Nice!" class="responsive-img">
+
+                            <p>From crispy to juicy, our chicken recipe bring bold flovors straight to your table.</p>
 
                             <a href="chicken" class="btn-flat orange darken-4 white-text bold">ALL CHICKEN RECIPES</a>
                         </div>
                     </li>
                 </ul>
             </div>
-            <hr  id="customers">
+            <hr>
         </section>
 
         <!-- Customers Reviews -->
-        <section class="container" id="reviews">
-            <h1 class="orange-text text-darken-4 center hide-on-small-and-down">What Our Customers Say...</h1>
-            <h4 class="orange-text text-darken-4 center hide-on-med-and-up">What Our Customers Say...</h4>
+        <section class="container">
+            <h4 class="orange-text text-darken-4 center hide-on-small-and-down">What Our Customers Say...</h4>
+            <h5 class="orange-text text-darken-4 center hide-on-med-and-up">What Our Customers Say...</h5>
             <div class="row">
-                <div class="col s12">
-                    <ul class="collection">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle orange darken-4 white-text ">person</i>
-                            <span class="orange-text text-darken-4 bold bold">Ryan Kingfisher</span>
-                            <p class="italic">"In life there will be road blocks but we will over come it. Hammock talk come soon. Let's see what Chef Dee got that they don't want us to eat."</p>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle orange darken-4 white-text ">person</i>
-                            <span class="orange-text text-darken-4 bold">Jessica Ulman</span>
-                            <p class="italic">"They will try to close the door on you, just open it. Look at the sunset, life is amazing, life is beatiful, life is what you make it."</p>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle orange darken-4 white-text ">person</i>
-                            <span class="orange-text text-darken-4 bold">Olubenga Tiawo</span>
-                            <p class="italic">"Learning is cool but knowing is better, and I know the key to success, The key to more success is to have a lot of pillows."</p>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle orange darken-4 white-text ">person</i>
-                            <span class="orange-text text-darken-4 bold">Kugama Namastuki</span>
-                            <p class="italic">"Put it this way. It took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I'm never giving up, I'm just getting started."</p>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle orange darken-4 white-text ">person</i>
-                            <span class="orange-text text-darken-4 bold">Jessica Ulman</span>
-                            <p class="italic">"You see that bamboo behind me though, you see that bambo? Ain't nothin' like bamboo. Bless up, I'm up to something."</p>
-                        </li>
-                    </ul>
+                <div class="col s12 m6 l6">
+                    <p>
+                        "I used to be intimidated in the kitchen, but the step-by-step cake recipes here gave me the confidence to bake my first chocolate cake-and it turned out amazing. Now my kids ask for it every weekend!."
+                    </p>
+                    <p class="orange-text text-darken-4">- Ryan Kingfisher</p>
+                </div>
+                <div class="col"></div>
+                <div class="col s12 m6 l6">
+                    <p>
+                        "I tried the honey garlic chicken from Recipe.com last night, and my whole family couldn't stop raving about it. It's simple, quick, and absolutely delicious."
+                    </p>
+                    <p class="orange-text text-darken-4">- Sarah Jones</p>
+                </div>
+            </div>
+            <div class="row hide-on-small-and-down"></div>
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <p>
+                        "The soup recipes on Recipe.com are my go-to whenever I want comfort food. The creamy taomato basil soup is now a staple in my home."
+                    </p>
+                    <p class="orange-text text-darken-4">- Linda Brown</p>
+                </div>
+                <div class="col"></div>
+                <div class="col s12 m6 l6">
+                    <p>
+                        "What I love about Recipe.com is the variety-cakes for my sweet tooth, chicken for dinner, and soups for lazy Sundays. It's like having a personal chef online."
+                    </p>
+                    <p class="orange-text text-darken-4">- Abel Smith</p>
                 </div>
             </div>
 
@@ -210,7 +220,7 @@
         <section class="container" id="cakes">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Cakes</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Cakes</h4>
-            <p>The other day the grass was brown, now it's green because I ain't give up. Never surrender. The key is to enjoy life because they don't want you to enjoy life. I promise you, they don't want you to jetski, they don't want you to smile. Congratulations, you played youself.</p>
+            <p>Cakes is a flour confection made from flour, sugar, and other ingriedients and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate and which share features with desserts such as pastries, meringues, custards, and pies.</p>
 
             <div class="row">
                 <div class="col s12 m6 l4">
@@ -220,11 +230,24 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Sponge Cake</h5>
-                            <p>Give thanks to the most high. The weather is amazing.</p>
+                            <p>A light, fluffy classic perfect for any occasion.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
+                            <a href="#cake-ingredients-1" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Ingredients</a>
                             <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
+                        </div>
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="cake-ingredients-1">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Flour</li>
+                                    <li>Eggs</li>
+                                    <li>Sugar</li>
+                                    <li>Baking Powder</li>
+                                    <li>Butter</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,11 +258,24 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Velvet Cake</h5>
-                            <p>Walk with me through the path way of more success.</p>
+                            <p>Rich, moist, and elegantly smooth with a hint of cocoa.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
+                            <a href="#cake-ingredients-2" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Ingredients</a>
                             <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
+                        </div>
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="cake-ingredients-2">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Flour</li>
+                                    <li>Red Food Coloring</li>
+                                    <li>Sugar</li>
+                                    <li>Cocoa Powder</li>
+                                    <li>Vegetable Oil</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -250,103 +286,30 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Courgette Cake</h5>
-                            <p>They will try to close the door on you, just open it. Lion!</p>
+                            <p>A moist and wholesome cake with a fresh twist from courgettes.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
+                            <a href="#cake-ingredients-3" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Ingredients</a>
                             <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
                         </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chocolate_2.png" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chocolate Cake</h5>
-                            <p>When you get out the shower, alway dry your back.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
-                            <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="cake-ingredients-3">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Flour</li>
+                                    <li>Courgette (zucchini)</li>
+                                    <li>Sugar</li>
+                                    <li>Eggs</li>
+                                    <li>Vegetable Oil</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/sponge_cake.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Coffee Slab Cake</h5>
-                            <p>To succeed you must believe. Special cloth talk.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
-                            <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/pistachio_cake.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Pistachio Cake</h5>
-                            <p>Never complain, complaining is a weak emotion.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
-                            <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/polenta_cake.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Polenta Cake</h5>
-                            <p>Lion! I am up to something. They don't want us to eat.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
-                            <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/buttermilk_cake.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Buttermilk Cake</h5>
-                            <p>When you get out the shower, always dry your back.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
-                            <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chocolate_1.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Peanut Cake</h5>
-                            <p>When you get out the shower, always dry your back.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Ingredients</button>
-                            <button class="btn-flat white orange-text text-darken-4">Bake Now</button>
-                        </div>
-                    </div>
+                </div> 
+
+                <div class="col s12 center-align">
+                    <a href="all-recipes-cakes.html" class="btn-large orange darken-4 white-text center">SEE ALL RECIPES</a>
                 </div>
             </div>
         </section>
@@ -365,7 +328,7 @@
         <section class="container" id="soups">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Soups</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Soups</h4>
-            <p>When you believe, you will succeed. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don't want you to eat. Surround yourself with angels, positive energy, beatiful people, beautiful souls, and a clean heart.</p>
+            <p>Soup is one of the world's oldest and most universal foods, said Janet Clarkson, authore of the book "Soup: A Global History." "Every culture has some kind of soup", she said. "It's got very ancient roots". Early people simmered it in everything from turtle shells to lengths of bamboo, she writes in the book, turning out metal soup pots starting in the Bronze Age.</p>
 
             <div class="row">
                 <div class="col s12 m6 l4">
@@ -375,11 +338,25 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Lentil Soup</h5>
-                            <p>Give thanks to the most high. You smart, you loyal.</p>
+                            <p>Hearty, protein-packed, and perfect for a filling meal.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#soup-ingredients-1" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="soup-ingredients-1">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Red Lentils</li>
+                                    <li>Carrots</li>
+                                    <li>Garlic</li>
+                                    <li>Tomatoes</li>
+                                    <li>Onions</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -390,11 +367,25 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Olive Soup</h5>
-                            <p>I'm never giving up, I'm just getting started. You know it.</p>
+                            <p>A Mediterranean-inspired soup with bold, briny flavors.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#soup-ingredients-2" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="soup-ingredients-2">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Green Olives</li>
+                                    <li>Garlic</li>
+                                    <li>Tomatoes</li>
+                                    <li>Olive oil</li>
+                                    <li>Butter</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,103 +396,31 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Miso Soup</h5>
-                            <p>It took me twenty five years to get these plants, trust me..</p>
+                            <p>A light Japanese classic with savory umami richness.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#soup-ingredients-3" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="soup-ingredients-3">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Miso Paste</li>
+                                    <li>Dashi stock</li>
+                                    <li>Tofu</li>
+                                    <li>Seaweed (wakame)</li>
+                                    <li>Spring Onion</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chilli_soup.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chilli Soup</h5>
-                            <p>Eliptical talk. Life is what you make it, so let's make it.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/pumpkin_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Pumpkin Soup</h5>
-                            <p>To be successful, you've got to work hard to make history.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/winter_soup.jpg" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Winter Soup</h5>
-                            <p>It's important to use cocoa butter. It's the key to success.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/tom_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4"> Tom Soup</h5>
-                            <p>GOwn a swimming pool? Don't use chlorine. use salt water.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/morroco_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Morrocan Soup</h5>
-                            <p>If you have trash in your life, take it out, throw it away.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/mexican_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Mexican Soup</h5>
-                            <p>The key to success is to keep your head above the water.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
+
+                <div class="col s12 center-align">
+                    <a href="all-recipes-soups.html" class="btn-large orange darken-4 white-text center">SEE ALL RECIPES</a>
                 </div>
             </div>
         </section>
@@ -520,7 +439,7 @@
         <section class="container" id="chicken">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Chicken</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Chicken</h4>
-            <p>The key to more success is to have a lot of pillows. We the best. The ladies always say Stanley you smell good, I use Cool Breeze, Cocoa butter is the key. I'm giving you cloth talk, cloth. Special cloth alert, cut from a special cloth.</p>
+            <p>Chicken in all its many forms-from breast to thighs, or grilled to fried-has long been considered the dinner winner winner, and rightfully so. Unfortunately, that can mean falling into a dinner rut much too easily for our liking. If you're like us and just can't bear to make your (or your family's) old standbys for the umpteenth time, we've got you.</p>
 
             <div class="row">
                 <div class="col s12 m6 l4">
@@ -530,11 +449,25 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Orengano Wings</h5>
-                            <p>In life there will be road blocks but we will over come it.</p>
+                            <p>Crispy chicken wings infused with fragrant oregano seasoning.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#chicken-ingredients-1" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="chicken-ingredients-1">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Chicken Wings</li>
+                                    <li>Oregano</li>
+                                    <li>Olive Oil</li>
+                                    <li>Galic</li>
+                                    <li>Lemon Juice</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -545,11 +478,25 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Mashed Wings</h5>
-                            <p>Everyone has a choice, I pick my choice, squeaky clean.</p>
+                            <p>Tender wings coated with flavorful, mash-stlyed marinade</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#chicken-ingredients-2" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="chicken-ingredients-2">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Chicken Wings</li>
+                                    <li>Galic</li>
+                                    <li>Ginger</li>
+                                    <li>Say Sauce</li>
+                                    <li>Butter</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -560,102 +507,67 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Buttered Wings</h5>
-                            <p>It's on you how you want to live your life. Special Cloth</p>
+                            <p>Golden, juicy wings tossed in rich melted butter</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#chicken-ingredients-3" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="chicken-ingredients-3">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Chicken Wings</li>
+                                    <li>Butter</li>
+                                    <li>Galic</li>
+                                    <li>Black Pepper</li>
+                                    <li>Salt</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chicken_8.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Yogurt Chicken</h5>
-                            <p>Celebrate success right, the only way, apple. Fan luv.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
-                        </div>
-                    </div>
+
+                <div class="col s12 center-align">
+                    <a href="all-recipes-chicken.html" class="btn-large orange darken-4 white-text center">SEE ALL RECIPES</a>
                 </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chicken_10.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chicken Tikka</h5>
-                            <p>Remeber in the jungle there's a lot of... they in there.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
-                        </div>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section class="grey lighten-4">
+            <div class="container">
+                <div class="row"></div> <!--Just to create space at the top of the first input element-->
+                <div class="row">
+                    <div class="col s12 l5">
+                        <h4 class="orange-text text-darken-4">Contact Us Today!</h4>
+                        <p>Do you want to submit a new recipe? Send us a message to get started.</p>
+
+                        <a href="tel:+2349013915207" class="btn-large orange darken-4 white-text waves-effect waves-light">CALL US NOW <i class="material-icons right">phone</i></a>
                     </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chicken_2.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chicken Cousscous</h5>
-                            <p>I pick my choice, squeaky clean. Stay focused.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/caramel.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Caramel Chicken</h5>
-                            <p>It's the ones closest to you that want to see you fall.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/ramen.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chicken Ramen</h5>
-                            <p>They will try to close the door on you, just open it.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/saag.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chicken Saag</h5>
-                            <p>You do know that they don't want you to have lunch.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Prepare Now</button>
-                        </div>
+                    <div class="col"></div>
+                    <div class="col s12 l6">
+                        <!-- Form -->
+                        <form action="">
+                            <div class="row center-align">
+                                <div class="input-field col s12">
+                                    <input id="name" type="text" class="validate">
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Enter Your Email</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input id="message" type="text" class="validate">
+                                    <label for="message">Your Message</label>
+                                </div>
+    
+                                <button class="btn-large orange darken-4 white-text waves-effect waves-orange">SUBMIT</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -666,25 +578,25 @@
     <footer class="page-footer black">
         <div class="container">
             <div class="row">
-                <div class="col s12 m6 l4">
+                <div class="col s12 m5 l3">
                     <!-- logo -->
                     <a href="#">
                         <img src="images/icons_and_logos/logo-transparent.png" alt="recipe.com" class="responsive-img">
                     </a>
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae nisi quidem officia repudiandae eius qui animi reprehenderit amet quod quam!</p>
+                    <p>Your one stop for all cake, soup, and chicken recipes. Make something good today.</p>
                 </div>
-                <div class="col s12 m4 l4 hide-on-med-only">
+                <div class="col s12 m2 l4">
                     <!-- Blank space: I used it to create an empty space in between -->
                 </div>
-                <div class="col s12 m6 l4">
+                <div class="col s12 m5 l4">
                     <h4 class="orange-text text-darken-4">Quick Links</h4>
                     <ul>
                         <li><a href="#" class="white-text">Back to top</a></li>
                         <li><a href="#cakes" class="white-text">Cakes</a></li>
                         <li><a href="#soups" class="white-text">Soups</a></li>
                         <li><a href="#chicken" class="white-text">Chicken</a></li>
-                        <li><a href="#customers" class="white-text">Customers</a></li>
+                        <li><a href="#reviews" class="white-text">Reviews</a></li>
                     </ul>
                 </div>
             </div>
@@ -724,6 +636,8 @@
         $('.sidenav').sidenav();
 
         $('.materialboxed').materialbox();
+
+        $('.modal').modal();
     });
 </script>
 </html>
