@@ -50,7 +50,7 @@
                             <a class="orange-text text-darken-4 bold" href="#chicken">Chicken</a>
                         </li>
                         <li>
-                            <a class="orange-text text-darken-4 bold" href="#customers">Customers</a>
+                            <a class="orange-text text-darken-4 bold" href="#reviews">Reviews</a>
                         </li>
                     </ul>
                     
@@ -149,7 +149,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="col s12 m4 l4 collapsible popout over-ride-padding-to-0">
+                <ul class="col s12 m4 l4 collapsible popout over-ride-padding-to-0"  id="reviews"> <!--Reviews id is placed here, so the review section can display properly when navigated to.-->
                     <li>
                         <div class="collapsible-header orange darken-4 white-text bold">
                             <i class="material-icons left">label</i>
@@ -169,7 +169,7 @@
         </section>
 
         <!-- Customers Reviews -->
-        <section class="container" id="reviews">
+        <section class="container">
             <h4 class="orange-text text-darken-4 center hide-on-small-and-down">What Our Customers Say...</h4>
             <h5 class="orange-text text-darken-4 center hide-on-med-and-up">What Our Customers Say...</h5>
             <div class="row">
@@ -328,7 +328,7 @@
         <section class="container" id="soups">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Soups</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Soups</h4>
-            <p>When you believe, you will succeed. The first of the month is coming, we have to get money, we have no choice. It cost money to eat and they don't want you to eat. Surround yourself with angels, positive energy, beatiful people, beautiful souls, and a clean heart.</p>
+            <p>Soup is one of the world's oldest and most universal foods, said Janet Clarkson, authore of the book "Soup: A Global History." "Every culture has some kind of soup", she said. "It's got very ancient roots". Early people simmered it in everything from turtle shells to lengths of bamboo, she writes in the book, turning out metal soup pots starting in the Bronze Age.</p>
 
             <div class="row">
                 <div class="col s12 m6 l4">
@@ -338,11 +338,25 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Lentil Soup</h5>
-                            <p>Give thanks to the most high. You smart, you loyal.</p>
+                            <p>Hearty, protein-packed, and perfect for a filling meal.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#soup-ingredients-1" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="soup-ingredients-1">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Red Lentils</li>
+                                    <li>Carrots</li>
+                                    <li>Garlic</li>
+                                    <li>Tomatoes</li>
+                                    <li>Onions</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -353,11 +367,25 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Olive Soup</h5>
-                            <p>I'm never giving up, I'm just getting started. You know it.</p>
+                            <p>A Mediterranean-inspired soup with bold, briny flavors.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#soup-ingredients-2" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="soup-ingredients-2">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Green Olives</li>
+                                    <li>Garlic</li>
+                                    <li>Tomatoes</li>
+                                    <li>Olive oil</li>
+                                    <li>Butter</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -368,103 +396,31 @@
                         </div>
                         <div class="card-content">
                             <h5 class="card-title orange-text text-darken-4">Miso Soup</h5>
-                            <p>It took me twenty five years to get these plants, trust me..</p>
+                            <p>A light Japanese classic with savory umami richness.</p>
                         </div>
                         <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
+                            <a href="#soup-ingredients-3" class="btn-flat white orange-text orange-text text-darken-4 modal-trigger">Contents</a>
                             <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
+                        </div>
+
+                        <!-- Correspondind ingredient modal -->
+                        <div class="modal" id="soup-ingredients-3">
+                            <div class="modal-content">
+                                <h4 class="orange-text text-darken-4">Ingredients</h4>
+                                <ul>
+                                    <li>Miso Paste</li>
+                                    <li>Dashi stock</li>
+                                    <li>Tofu</li>
+                                    <li>Seaweed (wakame)</li>
+                                    <li>Spring Onion</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/chilli_soup.webp" alt="" class="responsive-img materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Chilli Soup</h5>
-                            <p>Eliptical talk. Life is what you make it, so let's make it.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/pumpkin_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Pumpkin Soup</h5>
-                            <p>To be successful, you've got to work hard to make history.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/winter_soup.jpg" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Winter Soup</h5>
-                            <p>It's important to use cocoa butter. It's the key to success.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/tom_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4"> Tom Soup</h5>
-                            <p>GOwn a swimming pool? Don't use chlorine. use salt water.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/morroco_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Morrocan Soup</h5>
-                            <p>If you have trash in your life, take it out, throw it away.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image">
-                            <img src="images/mexican_soup.webp" alt="" class="responsive-img materialboxed materialboxed">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title orange-text text-darken-4">Mexican Soup</h5>
-                            <p>The key to success is to keep your head above the water.</p>
-                        </div>
-                        <div class="card-action">
-                            <button class="btn-flat white orange-text orange-text text-darken-4">Contents</button>
-                            <button class="btn-flat white orange-text text-darken-4">Cook Now</button>
-                        </div>
-                    </div>
+
+                <div class="col s12 center-align">
+                    <a href="all-recipes-soups.html" class="btn-large orange darken-4 white-text center">SEE ALL RECIPES</a>
                 </div>
             </div>
         </section>
