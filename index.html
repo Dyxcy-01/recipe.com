@@ -112,7 +112,7 @@
 <!-- main -->
     <main>
         <!-- Home -->
-        <section class="container" id="home">
+        <section class="container scrollspy" id="home">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Hello there, foodies!</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Hello there, foodies!</h4>
             <p class="home-paragraph">
@@ -149,7 +149,7 @@
                         </div>
                     </li>
                 </ul>
-                <ul class="col s12 m4 l4 collapsible popout over-ride-padding-to-0"  id="reviews"> <!--Reviews id is placed here, so the review section can display properly when navigated to.-->
+                <ul class="col s12 m4 l4 collapsible popout over-ride-padding-to-0 scrollspy">
                     <li>
                         <div class="collapsible-header orange darken-4 white-text bold">
                             <i class="material-icons left">label</i>
@@ -164,6 +164,7 @@
                         </div>
                     </li>
                 </ul>
+                <section  id="reviews"></section> <!--Reviews id is placed here, so the review section can display properly when navigated to.-->
             </div>
             <hr>
         </section>
@@ -217,7 +218,7 @@
             <img src="images/cake.jpg" alt="A Cake." class="responsive-img">
         </div>
         <!-- Cakes -->
-        <section class="container" id="cakes">
+        <section class="container scrollspy" id="cakes">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Cakes</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Cakes</h4>
             <p>Cakes is a flour confection made from flour, sugar, and other ingriedients and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate and which share features with desserts such as pastries, meringues, custards, and pies.</p>
@@ -325,7 +326,7 @@
             <img src="images/soup.jpg" alt="A Soup" class="responsive-img">
         </div>
         <!-- Soups -->
-        <section class="container" id="soups">
+        <section class="container scrollspy" id="soups">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Soups</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Soups</h4>
             <p>Soup is one of the world's oldest and most universal foods, said Janet Clarkson, authore of the book "Soup: A Global History." "Every culture has some kind of soup", she said. "It's got very ancient roots". Early people simmered it in everything from turtle shells to lengths of bamboo, she writes in the book, turning out metal soup pots starting in the Bronze Age.</p>
@@ -436,7 +437,7 @@
             <img src="images/chicken.jpg" alt="A Chicken" class="responsive-img">
         </div>
         <!-- Chicken -->
-        <section class="container" id="chicken">
+        <section class="container scrollspy" id="chicken">
             <h1 class="orange-text text-darken-4 hide-on-small-and-down">Chicken</h1>
             <h4 class="orange-text text-darken-4 hide-on-med-and-up">Chicken</h4>
             <p>Chicken in all its many forms-from breast to thighs, or grilled to fried-has long been considered the dinner winner winner, and rightfully so. Unfortunately, that can mean falling into a dinner rut much too easily for our liking. If you're like us and just can't bear to make your (or your family's) old standbys for the umpteenth time, we've got you.</p>
@@ -638,6 +639,8 @@
         $('.materialboxed').materialbox();
 
         $('.modal').modal();
+
+        $('.scrollspy').scrollSpy();
     });
 </script>
 </html>
