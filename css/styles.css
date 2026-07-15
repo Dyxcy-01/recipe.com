@@ -1,4 +1,9 @@
 /* General */
+*{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 .home-paragraph{
     font-size: 25px;
