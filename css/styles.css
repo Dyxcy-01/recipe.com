@@ -10,7 +10,15 @@
     text-align: justify;
 }
 
+.see-all-recipes-margin-top{
+    margin: 30px;
+}
+
+
 /* Utilities */
+.nowrap{
+    text-wrap: nowrap;
+}
 .bold{
     font-weight: bold;
 }
